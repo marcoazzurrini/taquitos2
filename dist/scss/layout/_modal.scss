@@ -1,0 +1,16 @@
+.trigger {
+	@include label;
+	top: em(15px);
+}
+
+.trigger--contact {
+	@include label;
+	top: em(80px);
+}
+
+// CHECKBOXES
+
+input[type="checkbox"] {
+	position: absolute;
+	left: -1000px;
+}

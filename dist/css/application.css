@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+* {
+  margin: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container__front {
+  position: relative;
+  background: url("../images/bg.jpg") center no-repeat/cover;
+  opacity: 0.6;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+}
+
+.heading {
+  width: 100%;
+  position: absolute;
+  top: 40%;
+}
+.heading h1 {
+  position: relative;
+  color: #ff0000;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 90px;
+}
+@media (max-width: 415px) {
+  .heading h1 {
+    font-size: 3.75em;
+  }
+}
+
+.address {
+  position: absolute;
+  left: 0.9375em;
+  bottom: 0.9375em;
+  color: #fff;
+}
+.address p, .address .modal__wrap--contact .card form, .modal__wrap--contact .card .address form {
+  padding-top: 0.625em;
+  font-weight: 600;
+}
+@media (max-width: 415px) {
+  .address {
+    width: 100%;
+    left: 0;
+    bottom: 5em;
+    text-align: center;
+  }
+}
+
+.social {
+  position: absolute;
+  bottom: 0;
+  right: 0.625em;
+  width: 60px;
+  height: 135px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.social i {
+  color: #fff;
+}
+@media (max-width: 415px) {
+  .social {
+    flex-direction: row;
+    right: 33%;
+    bottom: 0.5em;
+    width: 135px;
+    height: 60px;
+  }
+}
+
+.trigger {
+  color: #000;
+  position: absolute;
+  padding: 1.25em;
+  background: #fff;
+  left: 0.9375em;
+  font-weight: 600;
+  display: block;
+  width: 100px;
+  text-align: center;
+  top: 0.9375em;
+}
+
+.trigger--contact {
+  color: #000;
+  position: absolute;
+  padding: 1.25em;
+  background: #fff;
+  left: 0.9375em;
+  font-weight: 600;
+  display: block;
+  width: 100px;
+  text-align: center;
+  top: 5em;
+}
+
+input[type=checkbox] {
+  position: absolute;
+  left: -1000px;
+}
+
+#contact__trigger:checked ~ .modal__wrap--contact {
+  opacity: 1;
+  z-index: 2000;
+}
+
+.modal__wrap--contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.modal__wrap--contact .card {
+  max-width: 31.25em;
+  background: #fff;
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+.modal__wrap--contact .card label {
+  font-size: 1.5em;
+  background: #000;
+  color: #fff;
+  font-weight: 1000;
+  position: absolute;
+  top: 0.46875em;
+  right: 0.9375em;
+}
+.modal__wrap--contact .card h1 {
+  margin: 0 0 0.9375em 0;
+  padding: 0.9375em;
+  background: #000;
+  color: #990000;
+}
+.modal__wrap--contact .card p, .modal__wrap--contact .card form {
+  padding: 0.9375em;
+}
+.modal__wrap--contact .card form input,
+.modal__wrap--contact .card form textarea {
+  display: block;
+  width: 100%;
+  padding: 0.625em 0.625em;
+  margin: 0.9375em 0;
+  box-sizing: border-box;
+}
+.modal__wrap--contact .card form button {
+  border: none;
+  background: #000;
+  color: #fff;
+  padding: 0.9375em;
+  width: 100%;
+}
+
+.modal__wrap--menu,
+.modal__wrap--contact {
+  height: calc(100vh - 10px);
+  width: 100vw;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: 0.5s all ease-in-out;
+}
+
+#menu__trigger:checked ~ .modal__wrap--menu {
+  opacity: 1;
+  z-index: 2000;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+.wrap img {
+  max-width: 100%;
+  max-height: 100%;
+  z-index: -10;
+  position: absolute;
+  left: -2000px;
+  transition: all 0.5s ease-in-out;
+}
+
+#slide-1-trigger:checked ~ #step-1 {
+  left: 0%;
+  top: 0%;
+  z-index: 3000;
+}
+
+#slide-2-trigger:checked ~ #step-2 {
+  left: 0%;
+  top: 0%;
+  z-index: 3000;
+}
+
+#slide-3-trigger:checked ~ #step-3 {
+  left: 0%;
+  top: 0%;
+  z-index: 3000;
+}
+
+#slide-4-trigger:checked ~ #step-4 {
+  left: 0%;
+  top: 0%;
+  z-index: 3000;
+}
+
+#slide-5-trigger:checked ~ #step-5 {
+  left: 0%;
+  top: 0%;
+  z-index: 3000;
+}
+
+#slide-6-trigger:checked ~ #step-6 {
+  left: 0%;
+  top: 0%;
+  z-index: 3000;
+}
+
+header {
+  position: absolute;
+  top: 28%;
+  right: 10%;
+  z-index: 5000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+header label {
+  background: #990000;
+  color: black;
+  padding: 0.625em;
+  margin: 0.9375em;
+  display: inline-block;
+  border-radius: 0.3125em;
+  text-align: center;
+}
+header label:last-child {
+  font-size: 1.5em;
+  background: #000;
+  color: #fff;
+  font-weight: 1000;
+}
+@media (max-width: 415px) {
+  header {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    right: 0;
+    top: 60%;
+  }
+}
+@media (min-width: 416px) and (max-width: 1299px) {
+  header {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    right: 0;
+    top: 90%;
+  }
+}
+
+.sidebar__trigger--label {
+  position: absolute;
+  z-index: 1999;
+  top: 0.9375em;
+  left: 0.9375em;
+  color: #fff;
+}
+
+#sidebar__trigger {
+  position: absolute;
+  z-index: -10;
+  left: -1000px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  z-index: 10;
+  height: 100vh;
+  width: 30vw;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: -100;
+  transition: all 0.5s ease-in-out;
+}
+@media (max-width: 415px) {
+  nav {
+    width: 75vw;
+    z-index: 10;
+  }
+}
+
+#sidebar__trigger:checked ~ nav {
+  right: 0;
+  z-index: 10;
+}
+
+.container__front {
+  filter: blur(15px);
+  transition: 0.5s all ease-in-out;
+}
+.container__front:hover {
+  filter: blur(0);
+}
+
+.heading {
+  transition: 0.4s all ease-in-out;
+}
+
+.container:hover + .heading {
+  filter: blur(6px);
+}
+
+/*# sourceMappingURL=application.css.map */

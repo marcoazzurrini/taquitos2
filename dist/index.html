@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>W3C 22 | SASS</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/application.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="container__front"></div>
+        </div>   
+
+        
+        <!-- HAMBURGER MENU -->
+
+        <label class="sidebar__trigger--label" for="sidebar__trigger"><i class="fas fa-bars fa-3x"></i></label>
+        <input type="checkbox" id="sidebar__trigger">
+
+        <!-- SIDEBAR -->
+
+        <nav>
+            <label class="trigger" for="menu__trigger">Menu</label>
+            <label  class="trigger--contact" for="contact__trigger">Contact</label>
+        </nav>
+
+        <!-- HEADING LOGO -->
+        
+        <div class="heading">
+            <h1>TAQUITOS</h1>
+        </div>
+
+        <!-- ADDRESS -->
+
+        <div class="address">
+            <p>Monday - Saturday 11-23 | Sunday 12-22</p>
+            <p>78 Wilton Road, Pimlico</p>
+            <p>Powered by <span>Marco Azzurrini</span></p>
+        </div>
+
+        <!-- SOCIAL -->
+
+        <div class="social">
+            <a href="https://www.facebook.com/TaquitosVictoria/"><i class="fab fa-facebook fa-3x"></i></a>
+            <a href="https://www.instagram.com/taquitosvictoria/"><i class="fab fa-instagram fa-3x"></i></a>
+        </div>
+
+            <!-- MODAL -->
+
+            
+            <input type="checkbox" name="menu" id="menu__trigger">
+            <div class="modal__wrap--menu">
+                    
+                <div class="wrap">
+                    <header>
+                        <label for="slide-1-trigger">Step 1</label>
+                        <label for="slide-2-trigger">Step 2</label>
+                        <label for="slide-3-trigger">Step 3</label>
+                        <label for="slide-4-trigger">Step 4</label>
+                        <label for="slide-5-trigger">Step 5</label>
+                        <label for="slide-6-trigger">Step 6</label>
+                        <label id="exit" for="menu__trigger">&#10006;</label>
+                    </header>
+                    
+                    <input type="radio" name="slides" id="slide-1-trigger" checked>
+                    <img id="step-1" src="images/menu-1.jpg" alt="">
+                    <input type="radio" name="slides" id="slide-2-trigger">
+                    <img id="step-2" src="images/menu-2.jpg" alt="">
+                    <input type="radio" name="slides" id="slide-3-trigger">
+                    <img id="step-3" src="images/menu-3.jpg" alt="">
+                    <input type="radio" name="slides" id="slide-4-trigger">
+                    <img id="step-4" src="images/menu-4.jpg" alt="">
+                    <input type="radio" name="slides" id="slide-5-trigger">
+                    <img id="step-5" src="images/menu-5.jpg" alt="">
+                    <input type="radio" name="slides" id="slide-6-trigger">
+                    <img id="step-6" src="images/menu-6.jpg" alt="">
+                </div>
+            </div>
+    
+            
+            <input type="checkbox" name="menu" id="contact__trigger">
+            <div class="modal__wrap--contact">
+                <div class="card">
+                        <label id="exit" for="contact__trigger">&#10006;</label>
+                    <h1>Get In Touch</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, id.</p>
+                    <form action="">
+                        <input type="text" name="name" id="name" placeholder="Name">
+                        <input type="number" name="number" id="number" placeholder="How many people">
+                        <input type="datetime" name="date" id="date" placeholder="When">
+                        <textarea name="message" id="message" placeholder="Special Requirements"></textarea>      
+                        <button>SEND MESSAGE</button>   
+                    </form>
+                </div>
+            </div>
+   
+    </div>      
+</body>
+</html>

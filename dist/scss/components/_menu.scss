@@ -1,0 +1,73 @@
+// MODAL
+
+.modal__wrap--menu,
+.modal__wrap--contact {
+	@include modal;
+}
+
+#menu__trigger:checked ~ .modal__wrap--menu {
+	opacity: 1;
+	z-index: 2000;
+}
+
+input[type="radio"] {
+	display: none;
+}
+
+.wrap {
+	img {
+		max-width: 100%;
+		max-height: 100%;
+		z-index: -10;
+		position: absolute;
+		left: -2000px;
+		transition: all .5s ease-in-out;
+	}
+}
+
+#slide-1-trigger:checked ~ #step-1 {
+	@include slide;
+}
+#slide-2-trigger:checked ~ #step-2 {
+	@include slide;
+}
+#slide-3-trigger:checked ~ #step-3 {
+	@include slide;
+}
+#slide-4-trigger:checked ~ #step-4 {
+	@include slide;
+}
+#slide-5-trigger:checked ~ #step-5 {
+	@include slide;
+}
+#slide-6-trigger:checked ~ #step-6 {
+	@include slide;
+}
+
+header {
+	@include header;
+
+	label {
+		@include hdr-label;
+
+		&:last-child {
+			@include ext-btn;
+		}
+	}
+
+	@media (max-width: break(mobile)) {
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;
+		right: 0;
+		top: 60%;
+	}
+
+	@media (min-width: 416px) and (max-width: 1299px) {
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;
+		right: 0;
+		top: 90%;
+	}
+}

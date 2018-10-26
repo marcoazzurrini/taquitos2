@@ -1,0 +1,129 @@
+// HEADING MIXIN
+
+@mixin h1 {
+	position: relative;
+
+	color: color(red);
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	font-weight: font-a(font-weight);
+	font-size: font(font-size, h1-size);
+}
+
+// ADDRESS MIXIN
+
+@mixin address {
+	position: absolute;
+	left: em(15px);
+	bottom: em(15px);
+	color: color(white);
+
+	p {
+		padding-top: em(10px);
+		font-weight: font-a(bold);
+	}
+}
+
+// MODAL LABELS MIXIN
+
+@mixin label {
+	color: color(black);
+	position: absolute;
+	padding: em(20px);
+	background: color(white);
+	left: em(15px);
+	font-weight: font-a(bold);
+	display: block;
+	width: 100px;
+	text-align: center;
+}
+
+// MODAL MIXIN
+
+@mixin modal {
+	height: calc(100vh - 10px);
+	width: 100vw;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -10;
+	opacity: 0;
+	background: rgba(0, 0, 0, .5);
+	transition: .5s all ease-in-out;
+}
+
+// EXIT BUTTON MIXIN
+
+@mixin ext-btn {
+	font-size: em(24px);
+	background: color(black);
+	color: color(white);
+	font-weight: font-a(x-bold);
+}
+
+// CONTACT CARD MIXIN
+
+@mixin card {
+	max-width: em(500px);
+	background: color(white);
+	margin: auto;
+	text-align: center;
+	position: relative;
+}
+
+// FORM MIXIN
+
+@mixin form {
+	input,
+	textarea {
+		display: block;
+		width: 100%;
+		padding: em(10px) em(10px);
+		margin: em(15px) 0;
+		box-sizing: border-box;
+	}
+	button {
+		border: none;
+		background: color(black);
+		color: color(white);
+		padding: em(15px);
+		width: 100%;
+	}
+}
+
+// MENU HEADER MIXIN
+
+@mixin header {
+	position: absolute;
+	top: 28%;
+	right: 10%;
+	z-index: 5000;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+// HEADER LABEL MIXIN
+
+@mixin hdr-label {
+	background: darken(color(red), 20%);
+
+	color: (black);
+	padding: em(10px);
+	margin: em(15px);
+	display: inline-block;
+	border-radius: em(5px);
+	text-align: center;
+}
+
+// SLIDE MIXINS
+
+@mixin slide {
+	left: 0%;
+	top: 0%;
+	z-index: 3000;
+}

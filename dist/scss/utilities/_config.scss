@@ -1,0 +1,18 @@
+// FONTS
+
+$fonts: (x-bold : 1000, bold : 600, font-size : (h1-size : 90px));
+$base__font-size: 16px;
+$font-primary: 'Montserrat', sans-serif;
+// COLORS
+$colors: (
+	black : #000,
+	white : #fff,
+	red : #ff0000,
+	shades: (dark-red : darken(#ff0000, 20%), dark-white : darken(#fff, 20%), light-black : lighten(#000, 20%))
+);
+// PATHS
+$bg: "#{'../images/bg.jpg'}";
+
+// BREAKPOINTS
+
+$breaks: (mobile : 415px, tablet : 800px, laptop : 1300px);
