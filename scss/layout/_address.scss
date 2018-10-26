@@ -1,0 +1,10 @@
+.address {
+    @include address;
+
+        @media (max-width: break(mobile)) {
+            width: 100%;
+            left: 0;
+            bottom: em(80px);
+            text-align: center;
+        }  
+}

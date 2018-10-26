@@ -1,0 +1,18 @@
+.container__front {
+    filter: blur(15px);
+    transition: .5s all ease-in-out;
+
+    &:hover {
+        filter: blur(0);
+    }
+}
+
+.heading {
+    transition: .4s all ease-in-out;
+}
+
+.container:hover + .heading {
+    filter: blur(6px);
+
+    color: color-a(shades, dark-red);
+}

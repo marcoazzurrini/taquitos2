@@ -1,0 +1,39 @@
+//CONTACT
+
+#contact__trigger:checked ~ .modal__wrap--contact {
+    opacity: 1;
+    z-index: 2000;
+}
+
+.modal__wrap--contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .card {
+      @include card;
+
+        label {
+            @include ext-btn;
+            position: absolute;
+            top: em(7.5px);
+            right: em(15px);
+        }
+
+        h1 {
+            margin: 0 0 em(15px) 0;
+            padding: em(15px);
+            background: color(black);
+            color: darken(color(red), 20%);
+        }
+
+        p {
+            padding: em(15px);
+        }
+
+        form {
+            @extend p;
+            @include form;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+    margin: 0;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    background: color(black);
+    overflow: hidden;
+    
+    font-family: $font-primary;
+}
+
+.container__front {
+    position: relative;
+    background: url($bg) center no-repeat / cover;
+    opacity: .6;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+}

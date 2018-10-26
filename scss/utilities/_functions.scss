@@ -1,0 +1,30 @@
+// COLOR FUNCTION
+
+@function color($color-name) {
+    @return map-get($colors , $color-name);
+}
+
+@function color-a($color, $shade: dark-red) {
+    @return map-get(map-get($colors, $color), shade);
+}
+// FONT FUNCTION
+
+@function font-a($font-name) {
+    @return map-get($fonts , $font-name);
+}
+
+@function font($font, $font-size: 16px) {
+    @return map-get(map-get($fonts, $font), h1-size);
+}
+
+// PX TO EM FUNCTION
+
+@function em($target, $context: $base__font-size) {
+    @return ($target / $context) * 1em;
+}
+
+// BREAKPOINT FUNCTION
+
+@function break($break-name) {
+    @return map-get($breaks , $break-name);
+}

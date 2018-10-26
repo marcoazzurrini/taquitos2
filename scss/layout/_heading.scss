@@ -1,0 +1,14 @@
+.heading {
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    h1 {
+        @include h1;
+
+        @media (max-width: break(mobile)) {
+            font-size: em(60px);
+        }
+    }
+}
+
+
